@@ -1,0 +1,11 @@
+openai-whisper
+resemblyzer
+numpy
+soundfile
+pyaudio
+scipy
+torch
+keyboard
+fastapi 
+uvicorn 
+python-multipart
