@@ -25,7 +25,7 @@ This project allows you to upload audio files or record live meetings and provid
 - Key topics extraction & action items detection  
 
 ---
-## Folder Structure
+### Folder Structure
 project-root/
 │── backend/ # FastAPI backend
 │ ├── app.py
@@ -44,7 +44,7 @@ project-root/
 
 ---
 
-## Getting Started
+### Getting Started
 
 ### 1. Clone the repository
 
@@ -53,33 +53,34 @@ cd live-meeting-analyzer
 cd backend
 python -m venv venv
 
-# Activate virtual environment
-# Windows
+### Activate virtual environment
+### Windows
 venv\Scripts\activate
-# Linux/Mac
+### Linux/Mac
 source venv/bin/activate
 
 pip install -r requirements.txt
 
-# Run FastAPI server
+### Run FastAPI server
 uvicorn app:app --reload
 
-# Frontend Setup
+### Frontend Setup
 cd ../
 npm install
 npm run dev
 
 ### Usage
-# 1. File Upload
+### 1. File Upload
 Go to the File Upload page
 Drag & drop or browse an audio file
 Click Analyze File
 View transcript, speaker diarization, summary, and action items
-# 2. Live Recording
+### 2. Live Recording
 Go to the Live Recording page
 Click Start Recording
 Pause/Resume recording as needed
 Click Stop & Analyze
 View results similar to file upload
+
 
 
