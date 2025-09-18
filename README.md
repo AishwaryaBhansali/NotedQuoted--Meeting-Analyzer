@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# Live Meeting Analyzer
 
-## Project info
+A full-stack web application for **audio transcription, speaker diarization, and meeting analysis**.  
+This project allows you to upload audio files or record live meetings and provides:  
 
-**URL**: https://lovable.dev/projects/b9b13cec-893f-4ab9-bd24-ee716225e712
+- High-quality transcription using **Whisper**  
+- Speaker diarization using **Resemblyzer**  
+- Summary, key topics, and action items detection  
+- Frontend built with **React + TailwindCSS**  
+- Backend built with **FastAPI**  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+### Audio Processing
+- Upload audio files (MP3, WAV, M4A, OGG)  
+- Live recording from microphone  
+- Noise reduction  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b9b13cec-893f-4ab9-bd24-ee716225e712) and start prompting.
+### Analysis Features
+- Automatic transcription  
+- Speaker identification (diarization)  
+- Sentiment analysis of the meeting  
+- Key topics extraction & action items detection  
 
-Changes made via Lovable will be committed automatically to this repo.
+---
+## Folder Structure
+project-root/
+│── backend/ # FastAPI backend
+│ ├── app.py
+│ ├── main.py
+│── requirements.txt
+│
+│── public/ # Frontend public files
+│── src/ # Frontend React source code
+│
+│── package.json
+│── package-lock.json
+│── byte.config
+│── README.md
+│── .gitignore
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### 1. Clone the repository
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/yourusername/live-meeting-analyzer.git
+cd live-meeting-analyzer
+cd backend
+python -m venv venv
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Activate virtual environment
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
 
-# Step 3: Install the necessary dependencies.
-npm i
+pip install -r requirements.txt
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run FastAPI server
+uvicorn app:app --reload
+
+# Frontend Setup
+cd ../
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+### Usage
+# 1. File Upload
+Go to the File Upload page
+Drag & drop or browse an audio file
+Click Analyze File
+View transcript, speaker diarization, summary, and action items
+# 2. Live Recording
+Go to the Live Recording page
+Click Start Recording
+Pause/Resume recording as needed
+Click Stop & Analyze
+View results similar to file upload
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b9b13cec-893f-4ab9-bd24-ee716225e712) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
