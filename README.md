@@ -48,39 +48,40 @@ project-root/
 
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/live-meeting-analyzer.git
-cd live-meeting-analyzer
-cd backend
-python -m venv venv
+- git clone https://github.com/yourusername/live-meeting-analyzer.git
+- cd live-meeting-analyzer
+- cd backend
+- python -m venv venv
 
 ### Activate virtual environment
 ### Windows
-venv\Scripts\activate
+- venv\Scripts\activate
 ### Linux/Mac
-source venv/bin/activate
+- source venv/bin/activate
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ### Run FastAPI server
 uvicorn app:app --reload
 
 ### Frontend Setup
-cd ../
-npm install
-npm run dev
+- cd ../
+- npm install
+- npm run dev
 
 ### Usage
 ### 1. File Upload
-Go to the File Upload page
-Drag & drop or browse an audio file
-Click Analyze File
-View transcript, speaker diarization, summary, and action items
+- Go to the File Upload page
+- Drag & drop or browse an audio file
+- Click Analyze File
+- View transcript, speaker diarization, summary, and action items
 ### 2. Live Recording
-Go to the Live Recording page
-Click Start Recording
-Pause/Resume recording as needed
-Click Stop & Analyze
-View results similar to file upload
+- Go to the Live Recording page
+- Click Start Recording
+- Pause/Resume recording as needed
+- Click Stop & Analyze
+- View results similar to file upload
+
 
 
 
